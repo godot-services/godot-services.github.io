@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>godot-services</title>
+  <meta name="description" content="Open-source tooling for Godot projects: package manager, asset registry and desktop toolbox.">
+  <style>
+    :root {
+      --bg: #fafafa; --fg: #1b1d22; --muted: #5d6270; --card: #ffffff;
+      --border: #e2e4e9; --accent: #478cbf; --code: #f0f2f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181d; --fg: #e8eaee; --muted: #9aa0ad; --card: #1e2128;
+        --border: #2d313a; --accent: #6aa8db; --code: #262a33;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 64px 16px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    .lead { color: var(--muted); margin: 0 0 40px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px 24px; margin-bottom: 16px;
+    }
+    .card h2 { font-size: 1.15rem; margin: 0 0 4px; display: flex; gap: 10px; align-items: baseline; }
+    .card p { margin: 4px 0 12px; color: var(--muted); }
+    .tag {
+      font-size: .75rem; font-weight: 500; color: var(--muted);
+      border: 1px solid var(--border); border-radius: 99px; padding: 0 8px;
+    }
+    code {
+      background: var(--code); border-radius: 6px; padding: 2px 6px;
+      font: .9rem ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); }
+    footer { margin-top: 48px; color: var(--muted); font-size: .875rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>godot-services</h1>
+    <p class="lead">Open-source tooling for Godot projects.</p>
+
+    <section class="card">
+      <h2>gd <span class="tag">usable</span></h2>
+      <p>Package manager for Godot: installs addons from the Asset Library or Git, pinned and verified via a lockfile. Also manages Godot editors and export templates.</p>
+      <code>go install github.com/godot-services/gd@latest</code>
+      <p><a href="https://github.com/godot-services/gd">github.com/godot-services/gd</a></p>
+    </section>
+
+    <section class="card">
+      <h2>gdar <span class="tag">early</span></h2>
+      <p>Godot Asset Registry: a server to host your own assets for <code>gd</code>.</p>
+      <p><a href="https://github.com/godot-services/gdar">github.com/godot-services/gdar</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Godot Toolbox <span class="tag">early</span></h2>
+      <p>Tray app to install Godot versions, open your projects and manage addons, built on top of <code>gd</code>.</p>
+      <p><a href="https://github.com/godot-services/godot-toolbox">github.com/godot-services/godot-toolbox</a></p>
+    </section>
+
+    <footer>
+      MIT licensed · <a href="https://github.com/godot-services">github.com/godot-services</a><br>
+      Not affiliated with the Godot Foundation.
+    </footer>
+  </main>
+</body>
+</html>
