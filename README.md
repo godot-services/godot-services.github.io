@@ -4,6 +4,10 @@ Landing page of the godot-services organization, served by GitHub Pages from `ma
 
 Repos with Pages enabled show up under this site, e.g. `godot-services.github.io/gd`.
 
+## License
+
+Code is MIT. The favicons are adapted from the [Godot logo](https://github.com/godotengine/godot/tree/master/misc/logo) by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). godot-services is not affiliated with the Godot Foundation.
+
 ## Custom domain
 
 To serve the site at `godot.services`:
